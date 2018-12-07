@@ -1,4 +1,4 @@
-#N canvas 335 119 739 758 10;
+#N canvas 334 66 696 692 10;
 #X obj 302 122 vradio 16 1 1 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 239 168 hsl 128 15 0 50 0 0 empty speed speed -2 -8 0 10 -262144
@@ -33,8 +33,6 @@
 #X text 354 181 50;
 #X text 234 226 0;
 #X text 358 224 1;
-#X text 448 168 <- Adjust the speed beyond range;
-#X text 443 213 <- Adjust the depth beyond range;
 #X connect 0 0 16 1;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;

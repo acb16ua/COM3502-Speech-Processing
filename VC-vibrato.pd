@@ -1,4 +1,4 @@
-#N canvas 982 76 912 803 10;
+#N canvas 299 117 912 803 10;
 #X obj 247 387 inlet~;
 #X obj 247 554 *~;
 #X obj 246 474 hilbert~;
@@ -11,7 +11,7 @@
 #X obj 324 420 sig~;
 #X msg 322 111 0;
 #X obj 392 250 hsl 128 15 -1000 1000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 12700 1;
+10 -262144 -1 -1 6350 1;
 #X floatatom 324 383 5 0 0 0 - - -;
 #X obj 322 12 loadbang;
 #X obj 168 742 *~;
@@ -21,7 +21,7 @@
 #X obj 183 512 - 1;
 #X obj 183 542 * -1;
 #X obj 394 211 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 11500 1;
+-1 -1 0 1;
 #X obj 244 707 *~;
 #X obj 227 814 outlet~;
 #X text 482 224 Processed;
@@ -31,7 +31,7 @@
 #X obj 411 798 sig~;
 #X floatatom 411 768 5 0 0 0 - - -;
 #X obj 392 287 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 397 833 *~;
 #X obj 396 877 s~ \$0-feedback;
 #X obj 556 689 r~ \$0-feedback;
@@ -43,9 +43,9 @@
 #X obj 603 864 vd~ \$0-delayline;
 #X text 528 288 <- Adjust the feedback gain;
 #X obj 390 324 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 389 363 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X text 525 322 <- adjust the speed;
 #X text 527 361 <- adjust the depth;
 #X text 370 266 -1000;
@@ -65,6 +65,7 @@
 #X obj 613 79 inlet;
 #X obj 665 77 inlet;
 #X obj 732 84 inlet;
+#X obj 777 143 inlet;
 #X connect 0 0 14 0;
 #X connect 0 0 2 0;
 #X connect 1 0 3 0;
@@ -115,4 +116,5 @@
 #X connect 56 0 29 0;
 #X connect 57 0 39 0;
 #X connect 58 0 40 0;
+#X connect 59 0 51 0;
 #X coords 0 -1 1 1 350 250 1 370 150;

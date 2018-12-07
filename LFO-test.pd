@@ -1,6 +1,0 @@
-#N canvas 55 36 981 627 10;
-#X obj 332 287 output~;
-#X obj 528 392 wsprobe~;
-#X obj 492 147 LFO-test2;
-#X obj 65 -36 LFO~;
-#X connect 2 0 1 0;
