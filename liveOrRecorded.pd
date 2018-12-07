@@ -1,0 +1,23 @@
+#N canvas 243 98 364 472 10;
+#X obj 43 308 inlet;
+#X obj 120 240 readsf~;
+#X obj 35 144 delay 500;
+#X obj 120 88 loadbang;
+#X obj 120 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 35 223 start;
+#X msg 120 187 open speech.wav;
+#X obj 309 309 adc~;
+#X obj 120 325 multiplex~ 0 1;
+#X obj 119 380 outlet~;
+#X connect 0 0 8 0;
+#X connect 1 0 8 0;
+#X connect 1 1 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 4 0 6 0;
+#X connect 5 0 1 0;
+#X connect 6 0 1 0;
+#X connect 7 0 8 1;
+#X connect 8 0 9 0;
