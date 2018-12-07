@@ -1,0 +1,14 @@
+#N canvas -8 -8 1920 997 10;
+#X msg 35 52 0 0;
+#X msg 43 87 1 1;
+#X msg 48 121 2 2;
+#X obj 32 765 output~;
+#X obj 121 766 wsprobe~;
+#X text 73 88 <- LIVE AUDIO;
+#X text 66 51 <- PRE-RECORDED;
+#X text 79 122 <- CHOOSE YOUR OWN;
+#X obj 35 163 VoiceChanger;
+#X connect 0 0 8 0;
+#X connect 8 0 3 0;
+#X connect 8 0 3 1;
+#X connect 8 0 4 0;

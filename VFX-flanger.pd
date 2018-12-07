@@ -1,4 +1,4 @@
-#N canvas 560 40 783 704 10;
+#N canvas 1030 172 783 704 10;
 #X obj 221 617 output~;
 #X obj 329 614 wsprobe~;
 #X obj 214 172 readsf~;
@@ -26,6 +26,13 @@
 #X obj 237 513 *~;
 #X text 83 409 Processed Signal;
 #X text 376 281 <- Adjust the flanger level;
+#X obj 482 566 sig~;
+#X floatatom 482 536 5 0 0 0 - - -;
+#X obj 485 504 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 468 601 *~;
+#X obj 467 645 s~ \$0-feedback;
+#X obj 300 197 r~ \$0-feedback;
 #X connect 2 0 12 0;
 #X connect 2 0 14 0;
 #X connect 2 1 5 0;
@@ -45,8 +52,14 @@
 #X connect 16 0 0 0;
 #X connect 16 0 0 1;
 #X connect 16 0 1 0;
+#X connect 16 0 27 0;
 #X connect 17 0 18 0;
 #X connect 18 0 14 1;
 #X connect 19 0 17 0;
 #X connect 19 0 21 1;
 #X connect 21 0 16 1;
+#X connect 24 0 27 1;
+#X connect 25 0 24 0;
+#X connect 26 0 25 0;
+#X connect 27 0 28 0;
+#X connect 29 0 12 0;

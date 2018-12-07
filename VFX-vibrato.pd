@@ -1,37 +1,51 @@
-#N canvas 1032 158 802 804 10;
-#X obj 141 665 output~;
-#X obj 229 665 wsprobe~;
-#X obj 161 178 readsf~;
-#X obj 83 106 delay 500;
-#X obj 161 68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#N canvas 989 22 769 736 10;
+#X obj 115 664 output~;
+#X obj 203 664 wsprobe~;
+#X obj 135 177 readsf~;
+#X obj 57 105 delay 500;
+#X obj 135 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 83 143 start;
-#X msg 161 125 open speech.wav;
-#X obj 160 393 *~;
-#X obj 159 313 hilbert~;
-#X obj 159 435 -~;
-#X obj 205 396 *~;
-#X obj 238 363 cos~;
-#X obj 289 367 cos~;
-#X obj 237 288 phasor~;
-#X obj 288 328 +~ -0.25;
-#X obj 237 259 sig~;
-#X msg 237 153 0;
-#X obj 240 192 hsl 128 15 -1000 1000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 6350 1;
-#X floatatom 237 226 5 0 0 0 - - -;
-#X obj 161 28 loadbang;
-#X obj -4 528 *~;
-#X obj 141 599 +~;
-#X obj 364 334 LFO~;
-#X obj 158 485 *~;
-#X obj 11 387 - 1;
-#X obj 11 417 * -1;
-#X obj 14 324 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5500 1;
-#X obj 157 546 *~;
-#X text -10 292 Original Signal;
-#X text 95 292 Processed Signal;
+#X msg 57 142 start;
+#X msg 135 124 open speech.wav;
+#X obj 134 392 *~;
+#X obj 133 312 hilbert~;
+#X obj 133 434 -~;
+#X obj 179 401 *~;
+#X obj 212 375 cos~;
+#X obj 261 384 cos~;
+#X obj 212 311 phasor~;
+#X obj 262 327 +~ -0.25;
+#X obj 212 282 sig~;
+#X msg 211 152 0;
+#X obj 215 215 hsl 128 15 -1000 1000 0 0 empty empty empty -2 -8 0
+10 -262144 -1 -1 0 1;
+#X floatatom 212 249 5 0 0 0 - - -;
+#X obj 135 27 loadbang;
+#X obj -38 582 *~;
+#X obj 115 598 +~;
+#X obj 326 257 LFO~;
+#X obj 132 484 *~;
+#X obj -23 441 - 1;
+#X obj -23 471 * -1;
+#X obj -20 379 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9600 1;
+#X obj 131 545 *~;
+#X text -44 346 Original Signal;
+#X text 61 346 Processed Signal;
+#X obj 370 580 sig~;
+#X floatatom 370 550 5 0 0 0 - - -;
+#X obj 373 518 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 356 615 *~;
+#X obj 355 659 s~ \$0-feedback;
+#X obj 515 471 r~ \$0-feedback;
+#X obj 178 511 *~;
+#X obj 515 500 delwrite~ \$0-delayline 1000;
+#X obj 234 496 sig~;
+#X floatatom 234 466 5 0 0 0 - - -;
+#X obj 237 434 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 233 529 vd~ \$0-delayline;
 #X connect 2 0 8 0;
 #X connect 2 0 20 0;
 #X connect 2 1 4 0;
@@ -60,10 +74,20 @@
 #X connect 21 0 0 0;
 #X connect 21 0 0 1;
 #X connect 21 0 1 0;
+#X connect 21 0 33 0;
 #X connect 22 0 23 1;
-#X connect 23 0 27 0;
+#X connect 23 0 37 0;
 #X connect 24 0 25 0;
 #X connect 25 0 20 1;
 #X connect 26 0 24 0;
 #X connect 26 0 27 1;
 #X connect 27 0 21 1;
+#X connect 30 0 33 1;
+#X connect 31 0 30 0;
+#X connect 32 0 31 0;
+#X connect 33 0 34 0;
+#X connect 35 0 37 0;
+#X connect 38 0 41 0;
+#X connect 39 0 38 0;
+#X connect 40 0 39 0;
+#X connect 41 0 27 0;
