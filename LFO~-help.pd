@@ -1,0 +1,13 @@
+#N canvas 1222 358 442 417 10;
+#X obj 42 130 LFO~;
+#X obj 139 346 wsprobe~;
+#X obj 42 345 output~;
+#X text 42 20 LFO~ generates audio sine/square wave between 0 and 50
+Hertz. The user can adjust the 'speed' and 'depth'. The user also has
+the option to choose between sine or square wave as the output. The
+three external inputs are 'speed' \, 'depth' and 'reset' respectively.
+The three external outputs are the sine/square wave signal \, speed
+and depth respectively.;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 0 0 1 0;
