@@ -1,4 +1,4 @@
-#N canvas 1175 129 816 827 10;
+#N canvas 499 24 648 694 10;
 #X obj 179 615 output~;
 #X obj 274 616 wsprobe~;
 #X obj 231 186 readsf~;
@@ -17,8 +17,8 @@
 #X obj 358 336 +~ -0.25;
 #X obj 307 267 sig~;
 #X msg 307 161 0;
-#X obj 310 200 hsl 128 15 -1000 1000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 12700 1;
+#X obj 310 200 hsl 128 15 -1000 1000 0 0 empty empty frequency_shift
+-2 -8 0 10 -262144 -1 -1 6350 1;
 #X floatatom 307 234 5 0 0 0 - - -;
 #X obj 231 36 loadbang;
 #X obj 229 484 *~;
@@ -26,11 +26,10 @@
 #X obj 180 562 +~;
 #X obj 37 304 - 1;
 #X obj 37 334 * -1;
-#X obj 40 241 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 40 241 hsl 128 15 0 1 0 0 empty empty mixer -2 -8 0 10 -262144
 -1 -1 0 1;
-#X text 448 200 <- Adjust the frequency shift;
-#X text 148 212 Processed Signal;
-#X text 22 212 Original Signal;
+#X text 121 255 Processed Signal;
+#X text 5 256 Original Signal;
 #X connect 2 0 8 0;
 #X connect 2 0 21 0;
 #X connect 2 1 4 0;

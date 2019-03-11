@@ -37,13 +37,13 @@
 #X text 713 483 <- TOGLLE ON/OFF;
 #X text 1135 532 <- TOGLLE ON/OFF;
 #X text 1524 497 <- TOGLLE ON/OFF;
-#X obj 1458 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1458 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
 -1 -1;
-#X obj 1176 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1176 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
 -1 -1;
-#X obj 1250 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1250 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
 -1 -1;
-#X obj 1334 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1334 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
 -1 -1;
 #X msg 1520 15 1;
 #X msg 1746 35 50;
@@ -58,15 +58,15 @@
 #X msg 1741 70 1000;
 #X msg 1520 1 40;
 #X msg 1745 88 0.9;
-#X obj 605 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 605 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -203904
 -1 -1;
-#X obj 726 153 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 726 153 bng 15 250 50 0 empty empty empty 17 7 0 10 -203904
 -1 -1;
-#X obj 868 153 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 868 153 bng 15 250 50 0 empty empty empty 17 7 0 10 -203904
 -1 -1;
 #X obj 518 731 *~;
 #X obj 635 740 spigot~;
-#X obj 1566 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1566 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -232576
 -1 -1;
 #X text 506 132 Choose a source:;
 #X text 1126 154 C3PO ->;
@@ -81,6 +81,7 @@
 #X text 947 527 ~~FREQUENCY SHIFT~~;
 #X text 1359 506 ~~RING MODOLATION~~;
 #X text 1367 237 ~~FLANGER~~;
+#X obj 610 24 loadbang;
 #X connect 2 0 12 0;
 #X connect 2 0 3 0;
 #X connect 2 0 11 0;
@@ -161,4 +162,10 @@
 #X connect 51 0 9 0;
 #X connect 52 0 53 0;
 #X connect 53 0 13 0;
+#X connect 68 0 4 6;
+#X connect 68 0 6 4;
+#X connect 68 0 5 5;
+#X connect 68 0 12 1;
+#X connect 68 0 3 1;
+#X connect 68 0 11 3;
 #X coords 0 -1 1 1 1225 550 1 450 100;

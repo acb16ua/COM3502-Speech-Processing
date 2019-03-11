@@ -2,18 +2,18 @@
 #X obj 305 376 sig~;
 #X obj 291 524 +~;
 #X floatatom 305 346 5 0 0 0 - - -;
-#X obj 473 315 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 473 315 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -204786
 -1 -1 0 1;
 #X obj 423 566 sig~;
 #X floatatom 423 536 5 0 0 0 - - -;
-#X obj 473 347 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 473 347 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -204786
 -1 -1 0 1;
 #X obj 409 601 *~;
 #X obj 305 445 *~;
 #X obj 248 508 *~;
 #X obj 45 461 - 1;
 #X obj 45 491 * -1;
-#X obj 474 276 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 474 276 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262130
 -1 -1 0 1;
 #X obj 265 203 inlet~;
 #X obj 290 572 outlet~;
@@ -30,7 +30,7 @@
 #X obj 408 645 s~ \$0-feedback;
 #X obj 304 409 vd~ \$0-delayline;
 #X obj 294 282 delwrite~ \$0-delayline 1000;
-#X obj 695 275 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 695 275 bng 15 250 50 0 empty empty empty 17 7 0 10 -191407
 -1 -1;
 #X text 715 274 <- RESET;
 #X obj 460 68 bang;

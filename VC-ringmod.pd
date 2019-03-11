@@ -3,9 +3,9 @@
 #X obj 102 274 LFO~;
 #X obj 37 210 inlet~;
 #X obj 62 544 outlet~;
-#X obj 123 181 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 123 181 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -261234
 -1 -1 0 1;
-#X obj 123 219 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 123 219 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -261682
 -1 -1 0 1;
 #X text 258 179 <- adjust the speed;
 #X text 259 219 <- adjust the depth;
@@ -13,7 +13,7 @@
 #X text 241 197 50;
 #X text 116 235 0;
 #X text 247 233 1;
-#X obj 288 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 288 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -191407
 -1 -1;
 #X text 308 153 <- RESET;
 #X obj 85 27 inlet;

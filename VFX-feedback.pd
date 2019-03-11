@@ -11,21 +11,21 @@
 #X obj 227 357 sig~;
 #X obj 213 505 +~;
 #X floatatom 227 327 5 0 0 0 - - -;
-#X obj 230 295 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 230 295 hsl 128 15 0 1000 0 0 empty empty delay -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 411 514 sig~;
 #X floatatom 411 484 5 0 0 0 - - -;
-#X obj 414 452 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 414 452 hsl 128 15 0 1 0 0 empty empty feedback -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 397 549 *~;
 #X obj 227 426 *~;
 #X obj 187 489 *~;
-#X obj -33 442 - 1;
-#X obj -33 472 * -1;
-#X obj -30 379 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 10 441 - 1;
+#X obj 10 471 * -1;
+#X obj 13 378 hsl 128 15 0 1 0 0 empty empty mixer -2 -8 0 10 -262144
 -1 -1 0 1;
-#X text -48 350 Original Signal;
-#X text 71 349 Processed Signal;
+#X text -26 395 Original Signal;
+#X text 98 391 Processed Signal;
 #X obj 396 593 s~ \$0-feedback;
 #X obj 226 390 vd~ \$0-delayline;
 #X obj 210 241 delwrite~ \$0-delayline 1000;

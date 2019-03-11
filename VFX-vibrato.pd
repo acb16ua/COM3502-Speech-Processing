@@ -1,4 +1,4 @@
-#N canvas 989 22 769 736 10;
+#N canvas 571 23 769 736 10;
 #X obj 115 664 output~;
 #X obj 203 664 wsprobe~;
 #X obj 135 177 readsf~;
@@ -18,7 +18,7 @@
 #X obj 212 282 sig~;
 #X msg 211 152 0;
 #X obj 215 215 hsl 128 15 -1000 1000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 0 1;
+10 -262144 -1 -1 6350 1;
 #X floatatom 212 249 5 0 0 0 - - -;
 #X obj 135 27 loadbang;
 #X obj -38 582 *~;
@@ -27,15 +27,15 @@
 #X obj 132 484 *~;
 #X obj -23 441 - 1;
 #X obj -23 471 * -1;
-#X obj -20 379 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 9600 1;
+#X obj -20 379 hsl 128 15 0 1 0 0 empty empty mixer -2 -8 0 10 -262144
+-1 -1 0 1;
 #X obj 131 545 *~;
-#X text -44 346 Original Signal;
-#X text 61 346 Processed Signal;
+#X text -53 397 Original Signal;
+#X text 45 392 Processed Signal;
 #X obj 370 580 sig~;
 #X floatatom 370 550 5 0 0 0 - - -;
-#X obj 373 518 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+#X obj 373 518 hsl 128 15 0 1 0 0 empty empty feedback -2 -8 0 10 -262144
+-1 -1 0 1;
 #X obj 356 615 *~;
 #X obj 355 659 s~ \$0-feedback;
 #X obj 515 471 r~ \$0-feedback;
@@ -43,8 +43,8 @@
 #X obj 515 500 delwrite~ \$0-delayline 1000;
 #X obj 234 496 sig~;
 #X floatatom 234 466 5 0 0 0 - - -;
-#X obj 237 434 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+#X obj 237 434 hsl 128 15 0 1000 0 0 empty empty delay_scale -2 -8
+0 10 -262144 -1 -1 0 1;
 #X obj 233 529 vd~ \$0-delayline;
 #X connect 2 0 8 0;
 #X connect 2 0 20 0;

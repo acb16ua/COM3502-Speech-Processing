@@ -10,7 +10,7 @@
 #X obj 314 348 sig~;
 #X msg 319 62 0;
 #X obj 328 235 hsl 128 15 -1000 1000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 6350 1;
+10 -204786 -1 -1 6350 1;
 #X floatatom 314 315 5 0 0 0 - - -;
 #X obj 319 15 loadbang;
 #X obj 236 565 *~;
@@ -18,7 +18,7 @@
 #X obj 187 643 +~;
 #X obj 44 385 - 1;
 #X obj 44 415 * -1;
-#X obj 327 199 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 327 199 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262130
 -1 -1 0 1;
 #X text 466 235 <- Adjust the frequency shift;
 #X obj 236 340 inlet~;
@@ -28,7 +28,7 @@
 #X text 467 196 <- Mixer;
 #X text 308 248 -1000;
 #X text 440 248 1000;
-#X obj 525 198 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 525 198 bng 15 250 50 0 empty empty empty 17 7 0 10 -191407
 -1 -1;
 #X text 545 197 <- RESET;
 #X msg 524 63 0;

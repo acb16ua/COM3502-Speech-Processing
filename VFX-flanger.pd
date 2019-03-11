@@ -1,4 +1,4 @@
-#N canvas 1030 172 783 704 10;
+#N canvas 483 55 783 704 10;
 #X obj 221 617 output~;
 #X obj 329 614 wsprobe~;
 #X obj 214 172 readsf~;
@@ -11,25 +11,25 @@
 #X obj 237 344 sig~;
 #X obj 236 377 vd~ delayline;
 #X floatatom 237 314 5 0 0 0 - - -;
-#X obj 240 282 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+#X obj 240 282 hsl 128 15 0 1000 0 0 empty empty delay -2 -8 0 10 -262144
+-1 -1 0 1;
 #X obj 236 244 delwrite~ delayline 1000;
 #X obj 387 312 LFO~;
-#X obj 100 549 *~;
+#X obj 158 551 *~;
 #X obj 237 461 *~;
 #X obj 221 567 +~;
-#X obj -21 502 - 1;
-#X obj -21 532 * -1;
-#X obj -18 439 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
-#X text -36 410 Original Signal;
+#X obj 37 504 - 1;
+#X obj 37 534 * -1;
+#X obj 40 441 hsl 128 15 0 1 0 0 empty empty mixer -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 2 455 Original Signal;
 #X obj 237 513 *~;
-#X text 83 409 Processed Signal;
+#X text 121 455 Processed Signal;
 #X text 376 281 <- Adjust the flanger level;
 #X obj 482 566 sig~;
 #X floatatom 482 536 5 0 0 0 - - -;
-#X obj 485 504 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 12700 1;
+#X obj 485 504 hsl 128 15 0 1 0 0 empty empty feedback -2 -8 0 10 -262144
+-1 -1 0 1;
 #X obj 468 601 *~;
 #X obj 467 645 s~ \$0-feedback;
 #X obj 300 197 r~ \$0-feedback;

@@ -6,9 +6,9 @@
 #X obj 154 455 *~ 0.5;
 #X obj 94 441 *~;
 #X obj 200 199 LFO~;
-#X obj 22 68 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 22 68 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -261234
 -1 -1 0 1;
-#X obj 21 107 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 21 107 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -261682
 -1 -1 0 1;
 #X text 157 66 <- adjust the speed;
 #X text 159 105 <- adjust the depth;
@@ -16,7 +16,7 @@
 #X text 142 83 50;
 #X text 15 123 0;
 #X text 146 121 1;
-#X obj 191 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 191 32 bng 15 250 50 0 empty empty empty 17 7 0 10 -191407 -1
 -1;
 #X text 211 31 <- RESET;
 #X msg 390 69 0;

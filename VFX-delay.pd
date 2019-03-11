@@ -1,4 +1,4 @@
-#N canvas 1297 170 533 582 10;
+#N canvas 504 155 533 582 10;
 #X obj 351 491 wsprobe~;
 #X obj 266 171 readsf~;
 #X obj 188 99 delay 500;
@@ -12,16 +12,16 @@
 #X obj 258 376 vd~ delayline;
 #X floatatom 259 313 5 0 0 0 - - -;
 #X obj 262 281 hsl 128 15 0 1000 0 0 empty empty delay -2 -8 0 10 -262144
--1 -1 1428 1;
+-1 -1 0 1;
 #X obj 265 242 delwrite~ delayline 1000;
 #X obj 244 496 output~;
-#X obj 133 428 *~;
-#X obj 16 411 * -1;
-#X obj 19 318 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6400 1;
-#X text 1 289 Original Signal;
-#X text 120 288 Processed Signal;
-#X obj 16 365 - 1;
+#X obj 170 429 *~;
+#X obj 53 412 * -1;
+#X obj 56 319 hsl 128 15 0 1 0 0 empty empty mixer -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 16 333 Original Signal;
+#X text 144 332 Processed Signal;
+#X obj 53 366 - 1;
 #X obj 259 413 *~;
 #X connect 1 0 12 0;
 #X connect 1 0 14 0;

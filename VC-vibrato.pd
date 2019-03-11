@@ -1,4 +1,4 @@
-#N canvas 299 117 912 803 10;
+#N canvas 246 95 912 803 10;
 #X obj 247 387 inlet~;
 #X obj 247 554 *~;
 #X obj 246 474 hilbert~;
@@ -11,7 +11,7 @@
 #X obj 324 420 sig~;
 #X msg 322 111 0;
 #X obj 392 250 hsl 128 15 -1000 1000 0 0 empty empty empty -2 -8 0
-10 -262144 -1 -1 6350 1;
+10 -204786 -1 -1 6350 1;
 #X floatatom 324 383 5 0 0 0 - - -;
 #X obj 322 12 loadbang;
 #X obj 168 742 *~;
@@ -20,7 +20,7 @@
 #X obj 245 646 *~;
 #X obj 183 512 - 1;
 #X obj 183 542 * -1;
-#X obj 394 211 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 394 211 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262130
 -1 -1 0 1;
 #X obj 244 707 *~;
 #X obj 227 814 outlet~;
@@ -30,7 +30,7 @@
 #X text 528 249 <- Adjust the vibrato effect;
 #X obj 411 798 sig~;
 #X floatatom 411 768 5 0 0 0 - - -;
-#X obj 392 287 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 392 287 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -204786
 -1 -1 0 1;
 #X obj 397 833 *~;
 #X obj 396 877 s~ \$0-feedback;
@@ -42,9 +42,9 @@
 -1 -1 0 1;
 #X obj 603 864 vd~ \$0-delayline;
 #X text 528 288 <- Adjust the feedback gain;
-#X obj 390 324 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 390 324 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -261234
 -1 -1 0 1;
-#X obj 389 363 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 389 363 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -261682
 -1 -1 0 1;
 #X text 525 322 <- adjust the speed;
 #X text 527 361 <- adjust the depth;
@@ -56,7 +56,7 @@
 #X text 511 337 50;
 #X text 384 379 0;
 #X text 515 377 1;
-#X obj 615 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 615 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -191407
 -1 -1;
 #X text 635 208 <- RESET;
 #X msg 496 112 0;

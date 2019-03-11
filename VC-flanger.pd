@@ -4,7 +4,7 @@
 #X obj 176 392 sig~;
 #X obj 175 425 vd~ delayline;
 #X floatatom 176 362 5 0 0 0 - - -;
-#X obj 247 232 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 247 232 hsl 128 15 0 1000 0 0 empty empty empty -2 -8 0 10 -204786
 -1 -1 0 1;
 #X obj 26 317 delwrite~ delayline 1000;
 #X obj 385 390 LFO~;
@@ -13,16 +13,16 @@
 #X obj 231 577 +~;
 #X obj -11 512 - 1;
 #X obj -11 542 * -1;
-#X obj 247 196 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 247 196 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262130
 -1 -1 0 1;
 #X obj 247 523 *~;
 #X text 384 234 <- Adjust the flanger level;
 #X text 224 212 Original;
 #X text 341 212 Processed;
 #X text 381 195 <- Mixer;
-#X obj 245 273 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 245 273 hsl 128 15 0 50 0 0 empty empty empty -2 -8 0 10 -261234
 -1 -1 0 1;
-#X obj 244 312 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 244 312 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -261682
 -1 -1 0 1;
 #X text 380 271 <- adjust the speed;
 #X text 382 310 <- adjust the depth;
@@ -32,7 +32,7 @@
 #X text 365 289 50;
 #X text 236 329 0;
 #X text 367 327 1;
-#X obj 463 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 463 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -191407
 -1 -1;
 #X text 483 190 <- RESET;
 #X msg 331 77 0;
